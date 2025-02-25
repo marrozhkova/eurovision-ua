@@ -1,0 +1,329 @@
+.active {
+  box-shadow: 0 0 5px 5px #1670f0;
+}
+nav {
+  background-color: #0a0120;
+  color: white;
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    &:active,
+    &:visited {
+      color: white;
+    }
+    &:hover {
+      text-shadow: 0 0 10px rgba(22, 112, 240, 1),
+        /* Increased opacity and size */ 0 0 20px rgba(22, 112, 240, 0.8),
+        /* Added middle layer */ 0 0 30px rgba(22, 112, 240, 0.6),
+        0 0 40px rgba(22, 112, 240, 0.4);
+      color: #1670f0;
+    }
+  }
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 auto;
+  min-height: 0;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+.eurovision {
+  flex: 1 auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 0;
+}
+#world {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(30%, 30vh);
+  aspect-ratio: 1;
+  z-index: 1;
+  height: auto;
+  background-image: url("https://mdz-moskau.eu/wp-content/uploads/2019/02/wsi-imageoptim-ukraine-vidbir-2019.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20%;
+  box-shadow: 25px 25px 50px 0 #0a0120 inset, -25px -25px 50px 0 #0a0120 inset;
+  color: white;
+}
+/* Error page */
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 100vh;
+  background-color: #0a0120;
+  overflow: hidden;
+}
+
+.error-wrapper {
+  text-align: center;
+}
+
+.error-text {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #1670f0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  animation: float 3s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(22, 112, 240, 0.8),
+    0 0 20px rgba(22, 112, 240, 0.6), 0 0 30px rgba(22, 112, 240, 0.4),
+    2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.error-message {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 1rem;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.countdown {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #1670f0;
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #1670f0, 0 0 30px #1670f0;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #1670f0, 0 0 40px #1670f0;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+/*video*/
+.video {
+  width: min(50vw, 50vh);
+  aspect-ratio: 4/3;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(22, 112, 240, 0.3);
+  overflow: hidden;
+}
+
+.video iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: #0a0120;
+}
+.ziferblat {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://112.ua/uploads/950x550_45_main-v1739051678.webp.png");
+}
+.ruslana {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://numb3r5s.wordpress.com/wp-content/uploads/2014/05/ruslana.jpg");
+}
+.jamala {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.escradio.com/wp-content/uploads/2016/05/esc-gewinner-2016-ukraine.jpg");
+}
+.verka {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://wiwibloggs.com/wp-content/uploads/2016/11/verka-serduchka.jpg");
+}
+.kalush {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.machallconcerts.com/wp-content/uploads/2022/09/KALUSH-ORCHESTRA-IMG_8604-crop-1080x650.jpg");
+}
+.ziferblat,
+.ruslana,
+.jamala,
+.verka,
+.kalush {
+  flex: 1 auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.page-transition {
+  animation: slideFade 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+  transform-origin: center;
+}
+
+@keyframes slideFade {
+  0% {
+    transform: translateY(30px) scale(0.98);
+    filter: brightness(0.8);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    filter: brightness(1);
+  }
+}
+footer {
+  background-color: #0a0120;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 1rem;
+  flex-shrink: 0;
+  a {
+    position: relative;
+    color: #1670f0;
+    padding: 30px 60px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    &:hover {
+      text-shadow: 0 0 10px rgba(22, 112, 240, 1),
+        /* Increased opacity and size */ 0 0 20px rgba(22, 112, 240, 0.8),
+        /* Added middle layer */ 0 0 30px rgba(22, 112, 240, 0.6),
+        0 0 40px rgba(22, 112, 240, 0.4); /* Added fourth layer */
+      box-shadow: 0 20px 50px rgba(255, 255, 255, 0.15),
+        0 0 30px rgba(22, 112, 240, 0.6), 0 0 50px rgba(22, 112, 240, 0.4);
+      color: #fff;
+    }
+    :before {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      content: "";
+      width: 50%;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    span:nth-child(1) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #0c002b, #1779ff);
+      animation: animate1 2s linear infinite;
+    }
+    span:nth-child(2) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, #0c002b, #1779ff);
+      animation: animate2 2s linear infinite;
+      animation-delay: 1s;
+    }
+    span:nth-child(3) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to left, #0c002b, #1779ff);
+      animation: animate3 2s linear infinite;
+    }
+    span:nth-child(4) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to top, #0c002b, #1779ff);
+      animation: animate4 2s linear infinite;
+      animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
