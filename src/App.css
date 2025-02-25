@@ -11,7 +11,7 @@ nav {
   align-items: center;
   a {
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     text-decoration: none;
     &:active,
@@ -40,7 +40,7 @@ nav {
 
   h1 {
     text-align: center;
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 .eurovision {
@@ -62,7 +62,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(40%, 40vh);
+  width: min(45%, 45vh);
   aspect-ratio: 1;
   z-index: 1;
   height: auto;
@@ -91,7 +91,7 @@ nav {
 }
 
 .error-text {
-  font-size: 15rem;
+  font-size: 10rem;
   font-weight: 900;
   color: #1670f0;
   text-transform: uppercase;
@@ -103,14 +103,14 @@ nav {
 }
 
 .error-message {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #fff;
   margin-top: 1rem;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 .countdown {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #1670f0;
   animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -148,7 +148,7 @@ nav {
 }
 /*video*/
 .video {
-  width: min(50vw, 50vh);
+  width: min(60vw, 60vh);
   aspect-ratio: 4/3;
   border: none;
   border-radius: 1rem;
@@ -228,7 +228,7 @@ footer {
     position: relative;
     color: #1670f0;
     padding: 3rem 6rem;
-    font-size: 3rem;
+    font-size: 2.3rem;
     letter-spacing: 0.2rem;
     text-decoration: none;
     box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.05);
