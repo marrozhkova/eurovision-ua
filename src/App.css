@@ -1,5 +1,5 @@
 .active {
-  box-shadow: 0 0 5px 5px #1670f0;
+  box-shadow: 0 0 0.5rem 0.5rem #1670f0;
 }
 nav {
   background-color: #0a0120;
@@ -11,7 +11,7 @@ nav {
   align-items: center;
   a {
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     text-decoration: none;
     &:active,
@@ -19,10 +19,10 @@ nav {
       color: white;
     }
     &:hover {
-      text-shadow: 0 0 10px rgba(22, 112, 240, 1),
-        /* Increased opacity and size */ 0 0 20px rgba(22, 112, 240, 0.8),
-        /* Added middle layer */ 0 0 30px rgba(22, 112, 240, 0.6),
-        0 0 40px rgba(22, 112, 240, 0.4);
+      text-shadow: 0 0 1rem rgba(22, 112, 240, 1),
+        /* Increased opacity and size */ 0 0 2rem rgba(22, 112, 240, 0.8),
+        /* Added middle layer */ 0 0 3rem rgba(22, 112, 240, 0.6),
+        0 0 4rem rgba(22, 112, 240, 0.4);
       color: #1670f0;
     }
   }
@@ -40,6 +40,7 @@ nav {
 
   h1 {
     text-align: center;
+    font-size: 10rem;
   }
 }
 .eurovision {
@@ -69,7 +70,8 @@ nav {
   background-position: center;
   background-size: cover;
   border-radius: 20%;
-  box-shadow: 25px 25px 50px 0 #0a0120 inset, -25px -25px 50px 0 #0a0120 inset;
+  box-shadow: 2.5rem 2.5rem 5rem 0 #0a0120 inset,
+    -2.5rem -2.5rem 5rem 0 #0a0120 inset;
   color: white;
 }
 /* Error page */
@@ -89,26 +91,26 @@ nav {
 }
 
 .error-text {
-  font-size: 8rem;
+  font-size: 15rem;
   font-weight: 900;
   color: #1670f0;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   animation: float 3s ease-in-out infinite;
-  text-shadow: 0 0 10px rgba(22, 112, 240, 0.8),
-    0 0 20px rgba(22, 112, 240, 0.6), 0 0 30px rgba(22, 112, 240, 0.4),
-    2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 1rem rgba(22, 112, 240, 0.8),
+    0 0 2rem rgba(22, 112, 240, 0.6), 0 0 3rem rgba(22, 112, 240, 0.4),
+    0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 .error-message {
-  font-size: 3rem;
+  font-size: 6rem;
   color: #fff;
   margin-top: 1rem;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 .countdown {
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: bold;
   color: #1670f0;
   animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -120,16 +122,16 @@ nav {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-2rem);
   }
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #1670f0, 0 0 30px #1670f0;
+    text-shadow: 0 0 1rem #fff, 0 0 2rem #1670f0, 0 0 3rem #1670f0;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #1670f0, 0 0 40px #1670f0;
+    text-shadow: 0 0 2rem #fff, 0 0 3rem #1670f0, 0 0 4rem #1670f0;
   }
 }
 
@@ -149,8 +151,8 @@ nav {
   width: min(50vw, 50vh);
   aspect-ratio: 4/3;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(22, 112, 240, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(22, 112, 240, 0.3);
   overflow: hidden;
 }
 
@@ -204,7 +206,7 @@ nav {
 
 @keyframes slideFade {
   0% {
-    transform: translateY(30px) scale(0.98);
+    transform: translateY(3rem) scale(0.98);
     filter: brightness(0.8);
   }
 
@@ -225,26 +227,26 @@ footer {
   a {
     position: relative;
     color: #1670f0;
-    padding: 30px 60px;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    padding: 3rem 6rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
     text-decoration: none;
-    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.05);
     overflow: hidden;
     &:hover {
-      text-shadow: 0 0 10px rgba(22, 112, 240, 1),
-        /* Increased opacity and size */ 0 0 20px rgba(22, 112, 240, 0.8),
-        /* Added middle layer */ 0 0 30px rgba(22, 112, 240, 0.6),
-        0 0 40px rgba(22, 112, 240, 0.4); /* Added fourth layer */
-      box-shadow: 0 20px 50px rgba(255, 255, 255, 0.15),
-        0 0 30px rgba(22, 112, 240, 0.6), 0 0 50px rgba(22, 112, 240, 0.4);
+      text-shadow: 0 0 1rem rgba(22, 112, 240, 1),
+        /* Increased opacity and size */ 0 0 2rem rgba(22, 112, 240, 0.8),
+        /* Added middle layer */ 0 0 3rem rgba(22, 112, 240, 0.6),
+        0 0 4rem rgba(22, 112, 240, 0.4); /* Added fourth layer */
+      box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.15),
+        0 0 3rem rgba(22, 112, 240, 0.6), 0 0 5rem rgba(22, 112, 240, 0.4);
       color: #fff;
     }
     :before {
       position: absolute;
-      top: 2px;
-      left: 2px;
-      bottom: 2px;
+      top: 0.2rem;
+      left: 0.2rem;
+      bottom: 0.2rem;
       content: "";
       width: 50%;
       background: rgba(255, 255, 255, 0.05);
@@ -254,7 +256,7 @@ footer {
       top: 0;
       left: 0;
       width: 100%;
-      height: 2px;
+      height: 0.2rem;
       background: linear-gradient(to right, #0c002b, #1779ff);
       animation: animate1 2s linear infinite;
     }
@@ -262,7 +264,7 @@ footer {
       position: absolute;
       top: 0;
       right: 0;
-      width: 2px;
+      width: 0.2rem;
       height: 100%;
       background: linear-gradient(to bottom, #0c002b, #1779ff);
       animation: animate2 2s linear infinite;
@@ -273,7 +275,7 @@ footer {
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 2px;
+      height: 0.2rem;
       background: linear-gradient(to left, #0c002b, #1779ff);
       animation: animate3 2s linear infinite;
     }
@@ -281,7 +283,7 @@ footer {
       position: absolute;
       top: 0;
       left: 0;
-      width: 2px;
+      width: 0.2rem;
       height: 100%;
       background: linear-gradient(to top, #0c002b, #1779ff);
       animation: animate4 2s linear infinite;
@@ -325,5 +327,16 @@ footer {
 
   100% {
     transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 480) {
+  :root {
+    font-size: 50%;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    font-size: 65%;
   }
 }
