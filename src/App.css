@@ -368,6 +368,8 @@ footer {
     transform: translate(-50%, -50%);
     width: min(50%, 50vh);
     aspect-ratio: 1;
+    box-shadow: 1rem 2rem 2rem 0 #0a0120 inset, -1rem 21rem 2rem 0 #0a0120 inset;
+    color: white;
   }
   .error {
     gap: 1rem;
@@ -411,6 +413,7 @@ footer {
     transform: translate(-50%, -50%);
     width: min(50%, 50vh);
     aspect-ratio: 1;
+    box-shadow: 1rem 2rem 2rem 0 #0a0120 inset, -1rem 21rem 2rem 0 #0a0120 inset;
   }
   .error {
     gap: 1.5rem;
@@ -454,6 +457,7 @@ footer {
     transform: translate(-50%, -50%);
     width: min(50%, 50vh);
     aspect-ratio: 1;
+    box-shadow: 1rem 2rem 2rem 0 #0a0120 inset, -1rem 21rem 2rem 0 #0a0120 inset;
   }
   .error {
     gap: 1.5rem;
