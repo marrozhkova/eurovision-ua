@@ -153,7 +153,7 @@ nav {
   border: none;
   border-radius: 1rem;
   box-shadow: 0 0 2rem rgba(22, 112, 240, 0.3);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .video iframe {
@@ -334,9 +334,48 @@ footer {
   :root {
     font-size: 50%;
   }
+  .main-container h1 {
+    font-size: 6rem;
+  }
+  .error-text {
+    font-size: 10rem;
+  }
+  .error-message {
+    font-size: 4rem;
+  }
+  .countdown {
+    font-size: 6rem;
+  }
+  .video {
+    width: 100%;
+  }
+  footer a {
+    padding: 2rem 4rem;
+    font-size: 2rem;
+  }
 }
+
 @media (max-width: 768px) {
   :root {
     font-size: 65%;
+  }
+  .main-container h1 {
+    font-size: 7rem;
+  }
+  .error-text {
+    font-size: 12rem;
+  }
+  .error-message {
+    font-size: 5rem;
+  }
+  .countdown {
+    font-size: 7rem;
+  }
+  .video {
+    width: 100%;
+  }
+  footer a {
+    padding: 2rem 4rem;
+    font-size: 2rem;
   }
 }
