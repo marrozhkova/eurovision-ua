@@ -17,12 +17,7 @@ function Eurovision() {
       <div className="eurovision">
         <canvas ref={canvasRef} id="world"></canvas>
       </div>
-      <div className="main-img">
-        {/* <img
-          src="https://mdz-moskau.eu/wp-content/uploads/2019/02/wsi-imageoptim-ukraine-vidbir-2019.jpg"
-          alt="Eurovision"
-        /> */}
-      </div>
+      <div className="main-img"></div>
     </>
   );
 }
