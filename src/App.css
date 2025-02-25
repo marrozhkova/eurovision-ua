@@ -334,8 +334,11 @@ footer {
   :root {
     font-size: 50%;
   }
-  nav a {
-    font-size: 1.5rem;
+  nav {
+    padding: 1rem;
+    a {
+      font-size: 1.5rem;
+    }
   }
   .main-container h1 {
     font-size: 5rem;
@@ -371,8 +374,11 @@ footer {
   :root {
     font-size: 55%;
   }
-  nav a {
-    font-size: 2rem;
+  nav {
+    padding: 1rem;
+    a {
+      font-size: 2rem;
+    }
   }
   .main-container h1 {
     font-size: 6rem;
