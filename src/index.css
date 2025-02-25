@@ -13,7 +13,6 @@ body {
   height: 100vh;
   flex-direction: column;
   background-color: #0a0120;
-  overflow: hidden;
 }
 #root {
   display: flex;
