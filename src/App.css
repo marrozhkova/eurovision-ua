@@ -340,6 +340,9 @@ footer {
       font-size: 1.5rem;
     }
   }
+  .jamala {
+    background-position: left;
+  }
   .main-container h1 {
     font-size: 3rem;
   }
@@ -379,6 +382,9 @@ footer {
     a {
       font-size: 2rem;
     }
+  }
+  .jamala {
+    background-position: left;
   }
   .main-container h1 {
     font-size: 3.5rem;
