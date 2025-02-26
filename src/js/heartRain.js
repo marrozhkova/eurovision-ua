@@ -10,7 +10,7 @@ export default function heartRain() {
       let duration = Math.random() * 2;
 
       e.style.left = left + "rem";
-      e.style.animationDuration = 1 + duration + "s";
+      e.style.animationDuration = 3 + duration + "s";
 
       setTimeout(function () {
         heart.removeChild(e);
@@ -20,5 +20,5 @@ export default function heartRain() {
 
   setInterval(function () {
     raining();
-  }, 50);
+  }, 200);
 }
