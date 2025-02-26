@@ -6,10 +6,11 @@ export default function heartRain() {
 
     if (heart) {
       heart.appendChild(e);
-      let left = Math.floor(Math.random() * 30);
+      let maxWidth = window.innerWidth * 0.3;
+      let left = Math.floor(Math.random() * maxWidth);
       let duration = Math.random() * 2;
 
-      e.style.left = left + "rem";
+      e.style.left = left + "px";
       e.style.animationDuration = 3 + duration + "s";
 
       setTimeout(function () {
