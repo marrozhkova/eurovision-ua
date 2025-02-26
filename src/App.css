@@ -191,14 +191,12 @@ nav {
 }
 /*video*/
 .video {
-  width: min(60vw, 60vh);
-  aspect-ratio: 4/3;
+  flex: 1 auto;
+  width: 100%;
   border: none;
   border-radius: 1rem;
   box-shadow: 0 0 2rem rgba(22, 112, 240, 0.3);
-  /* overflow: hidden; */
 }
-
 .video iframe {
   border: none;
   width: 100%;
@@ -208,22 +206,37 @@ nav {
 .ziferblat {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://112.ua/uploads/950x550_45_main-v1739051678.webp.png");
+  .youtube-imitate {
+    background: url("https://img.youtube.com/vi/Dv4Zp_FG0qg/sddefault.jpg");
+  }
 }
 .ruslana {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://numb3r5s.wordpress.com/wp-content/uploads/2014/05/ruslana.jpg");
+  .youtube-imitate {
+    background: url("https://img.youtube.com/vi/10XR67NQcAc/sddefault.jpg");
+  }
 }
 .jamala {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://www.escradio.com/wp-content/uploads/2016/05/esc-gewinner-2016-ukraine.jpg");
+  .youtube-imitate {
+    background: url("https://img.youtube.com/vi/B-rnM-MwRHY/sddefault.jpg");
+  }
 }
 .verka {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://wiwibloggs.com/wp-content/uploads/2016/11/verka-serduchka.jpg");
+  .youtube-imitate {
+    background: url("https://img.youtube.com/vi/hfjHJneVonE/sddefault.jpg");
+  }
 }
 .kalush {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://www.machallconcerts.com/wp-content/uploads/2022/09/KALUSH-ORCHESTRA-IMG_8604-crop-1080x650.jpg");
+  .youtube-imitate {
+    background: url("https://img.youtube.com/vi/UiEGVYOruLk/sddefault.jpg");
+  }
 }
 .ziferblat,
 .ruslana,
@@ -241,6 +254,16 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+.youtube-imitate {
+  display: flex;
+  width: min(60vw, 60vh);
+  aspect-ratio: 4/3;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(22, 112, 240, 0.3);
+  background-size: cover;
+  position: relative;
+}
 .page-transition {
   animation: slideFade 0.6s cubic-bezier(0.33, 1, 0.68, 1);
   will-change: transform;
@@ -256,6 +279,47 @@ nav {
   transition: 0.5s;
   animation: animate 2s linear infinite;
   z-index: -1;
+}
+
+.play {
+  background: red;
+  border-radius: 50% / 10%;
+  color: #ffffff;
+  font-size: 200%;
+  height: 12%;
+  aspect-ratio: 1.6/1.2;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  text-indent: 5%;
+  transition: all 150ms ease-out;
+}
+
+.play::before {
+  background: inherit;
+  border-radius: 5% / 50%;
+  bottom: 9%;
+  content: "";
+  left: -5%;
+  position: absolute;
+  right: -5%;
+  top: 9%;
+}
+
+.play::after {
+  border-style: solid;
+  width: 70%; /* Reduced from 100% */
+  height: 70%; /* Reduced from 100% */
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  clip-path: polygon(30% 20%, 30% 80%, 70% 50%); /* Adjusted triangle shape */
+  background-color: rgba(255, 255, 255, 0.9);
 }
 @keyframes animate {
   0% {
