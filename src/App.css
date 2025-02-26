@@ -644,6 +644,14 @@ footer {
   .error {
     gap: 1rem;
   }
+  .drop {
+    filter: drop-shadow(0.5rem 0.5rem 1rem #000)
+      drop-shadow(0 0 1rem rgba(255, 0, 0, 0.3));
+    &:before,
+    &:after {
+      background: rgba(255, 0, 0, 0.6);
+    }
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   :root {
@@ -688,6 +696,14 @@ footer {
   .error {
     gap: 1.5rem;
   }
+  .drop {
+    filter: drop-shadow(0.5rem 0.5rem 1rem #000)
+      drop-shadow(0 0 1rem rgba(255, 0, 0, 0.3));
+    &:before,
+    &:after {
+      background: rgba(255, 0, 0, 0.6);
+    }
+  }
 }
 @media (min-width: 769px) and (max-width: 992px) {
   :root {
@@ -731,6 +747,14 @@ footer {
   }
   .error {
     gap: 1.5rem;
+  }
+  .drop {
+    filter: drop-shadow(0.5rem 0.5rem 1rem #000)
+      drop-shadow(0 0 1rem rgba(255, 0, 0, 0.3));
+    &:before,
+    &:after {
+      background: rgba(255, 0, 0, 0.6);
+    }
   }
 }
 @media (min-width: 993px) and (max-width: 1260px) {
