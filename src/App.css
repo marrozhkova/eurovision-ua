@@ -262,7 +262,6 @@ nav {
   border-radius: 1rem;
   box-shadow: 0 0 2rem rgba(22, 112, 240, 0.3);
   background-size: contain;
-  background-position: center;
   position: relative;
 }
 .page-transition {
