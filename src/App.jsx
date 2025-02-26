@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Parent from "./components/Parent";
+import LayOut from "./components/LayOut";
 import Eurovision from "./components/Eurovision";
 import Ziferblat from "./components/Ziferblat";
 import Ruslana from "./components/Ruslana";
@@ -15,7 +15,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Parent />}>
+          <Route path="/" element={<LayOut />}>
             <Route index element={<Eurovision />} />
             <Route path="/ziferblat" element={<Ziferblat />} />
             <Route path="/ruslana" element={<Ruslana />} />

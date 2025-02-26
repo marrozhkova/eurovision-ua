@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { initCaterpillar } from "./caterpillar";
+import { initCaterpillar } from "../js/caterpillar";
 function Eurovision() {
   const canvasRef = useRef(null);
 

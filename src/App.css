@@ -10,6 +10,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   a {
+    position: relative;
     padding: 1rem;
     font-size: 2.5rem;
     color: white;
@@ -24,7 +25,49 @@ nav {
         /* Added middle layer */ 0 0 3rem rgba(22, 112, 240, 0.6),
         0 0 4rem rgba(22, 112, 240, 0.4);
       color: #1670f0;
+      &.nav-trophy::after,
+      &.nav-heart::after,
+      &.nav-year::after {
+        text-shadow: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translate(-50%, 50%);
+      }
+      &.nav-trophy::after {
+        content: "🏆";
+        margin-left: 1rem;
+      }
+      &.nav-heart::after {
+        content: "❤️";
+        margin-left: 1rem;
+        animation: heartbeat 1s infinite;
+      }
+      &.nav-year::after {
+        content: "⌛";
+        margin-left: 1rem;
+      }
     }
+  }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
   }
 }
 .main-container {
@@ -163,23 +206,23 @@ nav {
   background-color: #0a0120;
 }
 .ziferblat {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://112.ua/uploads/950x550_45_main-v1739051678.webp.png");
 }
 .ruslana {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://numb3r5s.wordpress.com/wp-content/uploads/2014/05/ruslana.jpg");
 }
 .jamala {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://www.escradio.com/wp-content/uploads/2016/05/esc-gewinner-2016-ukraine.jpg");
 }
 .verka {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://wiwibloggs.com/wp-content/uploads/2016/11/verka-serduchka.jpg");
 }
 .kalush {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://www.machallconcerts.com/wp-content/uploads/2022/09/KALUSH-ORCHESTRA-IMG_8604-crop-1080x650.jpg");
 }
 .ziferblat,
@@ -203,7 +246,38 @@ nav {
   will-change: transform;
   transform-origin: center;
 }
+.trophy {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: min(10%, 10vh);
+  aspect-ratio: 1;
+  filter: drop-shadow(0 0 4px #000);
+  transition: 0.5s;
+  animation: animate 2s linear infinite;
+  z-index: -1;
+}
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
 
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
 @keyframes slideFade {
   0% {
     transform: translateY(3rem) scale(0.98);
