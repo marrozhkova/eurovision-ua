@@ -357,14 +357,15 @@ nav {
   width: 1.5rem;
   height: 1.5rem;
   top: -3rem;
-  filter: drop-shadow(0.5rem 0.5rem 1rem #000) drop-shadow(0 0 1rem #f00);
+  filter: drop-shadow(0.5rem 0.5rem 1rem #000)
+    drop-shadow(0 0 1rem rgba(255, 0, 0, 0.3));
   transform-origin: bottom;
   animation: animate-heart 5 linear forwards;
   &:before,
   &:after {
     content: "";
     position: absolute;
-    background: #f00;
+    background: rgba(255, 0, 0, 0.6);
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     transform-origin: bottom center;
