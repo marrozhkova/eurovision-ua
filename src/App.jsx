@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import LayOut from "./components/LayOut";
 import Eurovision from "./components/Eurovision";
@@ -17,12 +17,13 @@ function App() {
         <Routes>
           <Route path="/" element={<LayOut />}>
             <Route index element={<Eurovision />} />
-            <Route path="/ziferblat" element={<Ziferblat />} />
-            <Route path="/ruslana" element={<Ruslana />} />
-            <Route path="/jamala" element={<Jamala />} />
-            <Route path="/kalush" element={<Kalush />} />
-            <Route path="/verka" element={<Verka />} />
-            <Route path="*" element={<Error />} />
+            <Route path="ziferblat" element={<Ziferblat />} />
+            <Route path="ruslana" element={<Ruslana />} />
+            <Route path="jamala" element={<Jamala />} />
+            <Route path="kalush" element={<Kalush />} />
+            <Route path="verka" element={<Verka />} />
+            <Route path="error" element={<Error />} />
+            <Route path="*" element={<Navigate to="error" replace />} />
           </Route>
         </Routes>
       </BrowserRouter>

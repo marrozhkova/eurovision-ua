@@ -23,7 +23,7 @@ function Error() {
 
   return (
     <div className="error page-transition">
-      <div class="error-text">404</div>
+      <div className="error-text">404</div>
       <div className="error-text ">NOT FOUND</div>
       <div className="countdown">{count}</div>
     </div>
