@@ -169,7 +169,7 @@ const confetti = {
     }
   };
 
-  // Add the missing stop method
+  // Add the stop method
   confetti.stop = () => {
     isRunning = false;
   };

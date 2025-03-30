@@ -9,8 +9,13 @@ import Kalush from "./components/Kalush";
 import Verka from "./components/Verka";
 import Error from "./components/Error";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
+import { preloadAssets } from "./utility/preloadAppImages";
 
 function App() {
+  useEffect(() => {
+    preloadAssets();
+  }, []);
   return (
     <>
       <BrowserRouter>

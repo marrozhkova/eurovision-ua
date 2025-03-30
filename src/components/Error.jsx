@@ -14,7 +14,6 @@ function Error() {
       navi("/", { replace: true });
     }, 5000);
 
-    // Cleanup function to clear both timers
     return () => {
       clearInterval(timer);
       clearTimeout(redirect);

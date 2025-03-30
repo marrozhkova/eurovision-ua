@@ -24,7 +24,6 @@ const Parent = () => {
       <div className="main-container">
         <Outlet />
       </div>
-      {/* This is where the child routes will be rendered */}
     </>
   );
 };

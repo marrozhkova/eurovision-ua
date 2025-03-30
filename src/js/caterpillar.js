@@ -211,7 +211,7 @@ export function initCaterpillar(canvasElement) {
     isAutoMode = true;
     autoCnt = 0;
 
-    // Add appropriate event listeners based on device type
+    // event listeners based on device type
     if (isiPhone) {
       canvas.addEventListener("touchstart", oMouseDown, false);
       canvas.addEventListener("touchmove", oMouseMove, false);
