@@ -6,6 +6,11 @@ A bright, bold and celebratory **single-page app** dedicated to Ukraine's winner
 
 ---
 
+## 🎯 Purpose
+This project was built as a visual playground — to study and apply modern CSS trends like neumorphism and glassmorphism in a creative, non-functional interface. It's part of my personal exploration in UI design and frontend presentation.
+
+---
+
 ## ✨ Highlights
 
 - 🇺🇦 Showcases Ukraine’s Eurovision champions
@@ -42,3 +47,10 @@ git clone https://github.com/marrozhkova/eurovision-ua.git
 cd eurovision-ua
 npm install
 npm run dev
+```
+## 👤 Author
+
+**Maryna Rozhkova**  
+Frontend Developer | Learner by Heart  
+📫 [mar.rozhkova@gmail.com](mailto:mar.rozhkova@gmail.com)  
+🌐 [Portfolio](https://marrozhkova-portfolio.vercel.app/)
