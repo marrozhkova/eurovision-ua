@@ -7,7 +7,14 @@ A bright, bold and celebratory **single-page app** dedicated to Ukraine's winner
 ---
 
 ## 🎯 Purpose
-This project was built as a visual playground — to study and apply modern CSS trends like neumorphism and glassmorphism in a creative, non-functional interface. It's part of my personal exploration in UI design and frontend presentation.
+This project celebrates Ukrainian musical pride through code. It was also created to demonstrate my frontend development and design capabilities — particularly in crafting emotionally expressive UI that fits a theme.
+
+---
+
+## 🌈 Design Notes
+- Bright colors are intentional — Eurovision is not subtle.
+- Layout optimized for desktop and mobile views
+- Fonts and styling follow a pop-music inspired aesthetic
 
 ---
 
